@@ -1,0 +1,40 @@
+from turtle import*
+from random import*
+penup()
+goto (-150,60)
+pendown()
+goto(-150,-60)
+for i in range(3):
+    forward(300)
+    left (90)
+    forward(40)
+    left(90)
+    forward(300)
+    right(180)
+penup()
+t1=Turtle()
+t1.shape("turtle")
+t1.color("blue")
+t2=Turtle()
+t2.shape("turtle")
+t1.color("red")
+t3=Turtle()
+t3.shape("turtle")
+t3.color("green")
+t1.penup()
+t1.goto(-150,40)
+t2.penup()
+t2.goto(-150,0)
+t3.penup()
+t3.goto(-150,-40)
+x1=-150
+x2=-150
+x3=-150
+while x1<=150 and x2<=150 and x3<=150:
+    t1.forward(randint(0,3))
+    t2.forward(randint(0,3))
+    t3.forward(randint(0,3))
+    x1=t1.xcor()
+    x2=t2.xcor()
+    x3=t3.xcor()
+exitonclick()
